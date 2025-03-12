@@ -13,14 +13,14 @@ public class Main {
         System.out.printf("\nDo dai cua v1: %f\n", v1.calculateMagnitude());
         System.out.printf("Do dai cua v2: %f\n", v2.calculateMagnitude());
 
-        System.out.println("\nTong 2 veicto:");
-        v1.add(v2);
-        v1.displayVector();
+        Vector2D sumVector = v1.add(v2);
+        System.out.println("\nTong 2 vector:");
+        sumVector.displayVector();
 
-        System.out.println("Hieu 2 vecto:");
-        v1.subtract(v2);
-        v1.displayVector();
+        Vector2D diffVector = v1.subtract(v2);
+        System.out.println("\nHieu 2 vector:");
+        diffVector.displayVector();
 
-        System.out.printf("Tich vo huong giua v1 va v2: %.2f\n", v1.dotProduct(v2));
+        System.out.printf("\nTich vo huong giua v1 va v2: %f\n", v1.dotProduct(v2));
     }
 }
